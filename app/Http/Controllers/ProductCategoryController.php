@@ -88,6 +88,11 @@ class ProductCategoryController extends Controller
      */
     public function destroy(string $id)
     {
-        //
+        $this->service->deleteCategory($id);
+
+        return response()->json([
+            'message' => 'Categoria removida com sucesso!',
+            'status' => 200
+        ], 200);
     }
 }

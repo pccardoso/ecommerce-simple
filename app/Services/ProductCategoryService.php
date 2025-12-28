@@ -20,4 +20,8 @@
             return $this->repository->all();
         }
 
+        public function deleteCategory($id){
+            return $this->repository->delete($id);
+        }
+
     }

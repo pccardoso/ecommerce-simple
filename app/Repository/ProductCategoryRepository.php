@@ -16,4 +16,8 @@
             return ProductCategory::all();
         }
 
+        public function delete($id){
+            ProductCategory::destroy($id);
+        }
+
     }
