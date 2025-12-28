@@ -43,6 +43,7 @@ Route::middleware('auth:sanctum')->group(function () {
 
         Route::post('/', [ProductCategoryController::class, 'store']);
         Route::get('/', [ProductCategoryController::class, 'index']);
+        Route::delete('/{id}', [ProductCategoryController::class, 'destroy']);
 
     });
     
